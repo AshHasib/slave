@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "776032889023",
+    "firebase_url": "https://slave-ccc60.firebaseio.com",
+    "project_id": "slave-ccc60",
+    "storage_bucket": "slave-ccc60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776032889023:android:0ac2d789e316e1ef",
+        "android_client_info": {
+          "package_name": "com.example.hasib.slave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776032889023-ejc3266ov959m419d68t1b6q7uoetssn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hasib.slave",
+            "certificate_hash": "d68a3de36622cce9cfa2dc5dadf96b425125c53a"
+          }
+        },
+        {
+          "client_id": "776032889023-5sdcop9tnc18snpe3271sa2qfd16pr4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hasib.slave",
+            "certificate_hash": "0e9e5fc452d3c9bbac62c93095e999a12dac6a2c"
+          }
+        },
+        {
+          "client_id": "776032889023-p3js0rbv0cc140h5aiblgc3vpano89ng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6VWqkaCODgj1xFPWpLmpG20pPF-u5kpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "776032889023-p3js0rbv0cc140h5aiblgc3vpano89ng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
