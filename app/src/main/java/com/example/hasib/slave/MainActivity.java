@@ -1,12 +1,16 @@
 package com.example.hasib.slave;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.hasib.slave.adapters.ViewPagerAdapter;
@@ -26,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBar actionBar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,13 +38,23 @@ public class MainActivity extends AppCompatActivity {
 
         initToolbar();
         initTabLayout();
+        initComponents();
 
     }
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu,menu);
+        return true;
+    }
 
-
-
+    private void initComponents() {
+        fab=findViewById(R.id.floatingActionButton);
+        fab.setOnClickListener(v->{
+            startActivity(new Intent(MainActivity.this,CreateTaskActivity.class));
+        });
+    }
 
     private void initToolbar() {
         toolbar=findViewById(R.id.toolbar);
